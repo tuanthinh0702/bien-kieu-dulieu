@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuvihinhtron</title>
+</head>
+<input type="text" id="text">
+<button id="button" type="button" onclick="Chuvihinhtron()">Tinh chu vi</button>
+<p id="display"></p>
+<body>
+<script>
+    function Chuvihinhtron()
+{
+    const PI=3.14;
+    let r = document.getElementById("text").value;
+    let chuvi = r*2*PI;
+    document.getElementById("display").innerText = 'chu vi hinh tron la' +'  '+ chuvi;
+}
+</script>
+
+
+</body>
+</html>

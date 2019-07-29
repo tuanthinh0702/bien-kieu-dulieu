@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhapdiemsinhvien</title>
+</head>
+<body>
+điểm vật lý<input type="text" id="vatly" >
+điểm hóa học<input type="text" id="hoahoc">
+điểm sinh học<input type="text" id="sinhhoc">
+<button type="button" onclick="myFunction()"> ket qua</button>
+<p id="diemtrungbinh"></p>
+<p id="diemtong"></p>
+<script>
+    function myFunction() {
+        let vatly = document.getElementById("vatly").value;
+        let hoahoc = document.getElementById("hoahoc").value;
+        let sinhhoc = document.getElementById("sinhoc").value;
+        let diemvatly = parseInt(vatly);
+        let diemhoahoc = parseInt(hoahoc);
+        let diemsinhoc = parseInt(sinhhoc);
+        let diemtrungbinh = document.getElementById("diemtrungbinh").innerHTML=(diemvatly+diemsinhoc+diemhoahoc)/3;
+        let diemtong = document.getElementById("diemtong").innerHTML=diemvatly+diemsinhoc+diemhoahoc;
+    }
+</script>
+</body>
+</html>
