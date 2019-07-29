@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung may tinh</title>
+</head>
+<body>
+<form>
+<input type="text" id ="sothu1">
+<input type="text" id="sothu2">
+<br>
+<br>
+<button type="button" onclick=" Addition()" value="Addition" >Addition(+)</button>
+<button type="button" onclick="Subtraction()" value="Subtraction">Subtraction(-)</button>
+<button type="button" onclick="Multiplication()" value="Multiplication">Multiplication(X)</button>
+<button type="button" onclick="Division()" value="Division">Division(/)</button>
+    <p id ="result"></p>
+</form>
+<script>
+   /* function Merge() {
+
+        let merge = document.getElementById("result").innerHTML = button.value;
+        switch (merge) {
+            case Addition:
+                document.getElementById("result").innerHTML="Result:"+Addition();
+                break;
+            case Subtraction:
+                document.getElementById("result").innerHTML="Result:"+Subtraction();
+                break;
+            case Multiplication:
+                document.getElementById("result").innerHTML="Result:"+Multiplication();
+                break;
+            case Division:
+                document.getElementById("result").innerHTML="Result:"+Division();
+                break;
+        }
+
+    }*/
+    function Addition() {
+        let sothu1 = document.getElementById("sothu1").value;
+        let sothu2 = document.getElementById("sothu2").value;
+        let thu1=parseInt(sothu1);
+        let thu2=parseInt(sothu2);
+        let tong =thu1+thu2;
+        document.getElementById("result").innerHTML='Result Addition:'+tong;
+    }
+    function Subtraction() {
+        let sothu1 = document.getElementById("sothu1").value;
+        let sothu2 = document.getElementById("sothu2").value;
+        let thu1=parseInt(sothu1);
+        let thu2=parseInt(sothu2);
+        let hieu =thu1-thu2;
+        document.getElementById("result").innerHTML='Result Subtraction:'+hieu;
+    }
+    function Multiplication() {
+        let sothu1 = document.getElementById("sothu1").value;
+        let sothu2 = document.getElementById("sothu2").value;
+        let thu1=parseInt(sothu1);
+        let thu2=parseInt(sothu2);
+        let nhan =thu1*thu2;
+        document.getElementById("result").innerHTML='Result Multiplication:'+nhan;
+    }
+    function Division() {
+        let sothu1 = document.getElementById("sothu1").value;
+        let sothu2 = document.getElementById("sothu2").value;
+        let thu1=parseFloat(sothu1);
+        let thu2=parseFloat(sothu2);
+        let chia =thu1/thu2;
+        document.getElementById("result").innerHTML='Result Division:'+chia;
+    }
+</script>
+</body>
+</html>
