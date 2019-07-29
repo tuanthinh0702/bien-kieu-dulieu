@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ungdungchuyendoitiente</title>
+</head>
+<form>
+       <b>Amount</b>
+
+           <input type="text" id= "txt">
+    <b>From Currency</b>
+
+        <select id="a">
+            <option value="VIET NAM">VIET NAM</option>
+            <option value="USD"> USD</option>
+        </select>
+    <b> To Currency</b>
+
+    <select id="c">
+        <option value="USD"> USD</option>
+        <option VALUE="VIET NAM">VIET NAM</option>
+    </select>
+        <p id="hienthi"></p>
+    <button type="button" style="background-color: blueviolet; border-color: blue" onclick="chuyendoitiente()">Convert</button>
+</form>
+<script>
+    function chuyendoitiente() {
+        let text=document.getElementById("txt").value;
+      let select1 =  document.getElementById("a");
+      select1.value;
+      let select2 =  document.getElementById("c");
+       select2.value;
+        if(select1.value=='VIET NAM'&&select2.value=='USD')
+        {
+            document.getElementById("hienthi").innerHTML='Result:'+text/23000+'USD';
+
+        }
+        else if(select1.value=='USD'&&select2.value=='VIET NAM')
+        {
+            document.getElementById("hienthi").innerHTML='Result:'+text*23000+'VND';
+        }
+        else if(select1.value=='VIET NAM'&&select2.value=='VIET NAM')
+        {
+            document.getElementById("hienthi").innerHTML='Result:'+text+'VND';
+        }
+        else if(select1.value=='USD'&&select2.value=='USD')
+        {
+            document.getElementById("hienthi").innerHTML='Result:'+text+'USD';
+        }
+        else
+        {
+            document.write("không có");
+        }
+    }
+</script>
+<body>
+
+</body>
+</html>
